@@ -1,9 +1,9 @@
-const menuIcon = document.getElementById("menu-icon");
-const nav = document.querySelector(".nav");
+// const menuIcon = document.getElementById("menu-icon");
+// const nav = document.querySelector(".nav");
 
-menuIcon.addEventListener("click", () => {
-    nav.classList.toggle("active");
-});
+// menuIcon.addEventListener("click", () => {
+//     nav.classList.toggle("active");
+// });
 
 const text = "HI, I AM HARSH KUMAR";
 const typingText = document.querySelector("#typing-text");
@@ -64,4 +64,29 @@ function typeRole(){
 }
 
 
+const menu = document.getElementById("menu-icon");
+const nav = document.querySelector(".nav");
+
+menu.addEventListener("click", () => {
+
+    nav.classList.toggle("active");
+
+    if(nav.classList.contains("active")){
+        menu.innerHTML = "✖";
+    }else{
+        menu.innerHTML = "☰";
+    }
+
+});
+
+document.querySelectorAll(".nav a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        nav.classList.remove("active");
+        menu.innerHTML = "☰";
+
+    });
+
+});
 

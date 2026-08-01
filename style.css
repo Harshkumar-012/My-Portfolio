@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -49,7 +50,7 @@ body{
     top: 0;
     left: 0;
     width: calc(100% - 40px);
-    height: 8vh;
+    height: 74px;
     margin: 0px 20px;
     padding: 10px;
     z-index: 1000;
@@ -71,7 +72,7 @@ body{
     height: 60px;
     border-radius: 20px;
     margin: 18px 0;
-    box-shadow: 0 0 12px #00E5FF;
+    box-shadow: 0 0 6px #00E5FF;
     display: flex;
     align-items: center;
     transition: transform 0.3 ease;
@@ -87,14 +88,14 @@ html{
     scroll-behavior: smooth;
 }
 
+
 .menu-icon{
     display: none;
-    font-size: 30px;
+    font-size: 32px;
     color: white;
     cursor: pointer;
     margin-left: auto;
-    justify-content: right;
-    
+    z-index: 1001;
 }
 
 #main ,
@@ -226,7 +227,6 @@ html{
     align-items: center;
     height: 40px;
     width: 100px;
-    /* background: linear-gradient(90deg,#2563EB,#06B6D4); */
     background: #29b9e5;
     border-radius: 40px;
     color: #0F172A;
@@ -234,7 +234,7 @@ html{
     transition: transform 0.3 ease;
     margin: 5px 0;
     box-shadow: 0 0 10px #00E5FF;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     font-weight: 300;
 }
@@ -441,7 +441,8 @@ h1{
 .description1,
 .description2{
     line-height: 1.6;
-    text-align: justify;
+    text-align: left;
+    word-spacing: 2px;
     font-size: 1.5rem;
     color: #E2E8F0;
 }
@@ -555,6 +556,8 @@ h1{
 }
 
 .skill-item{
+    width: 170px;
+    height: 60px;
     display:flex;
     align-items:center;
     gap:10px;
@@ -564,6 +567,7 @@ h1{
     border:1.5px solid rgba(255,255,255,.2);
     transition:.3s;
     cursor:pointer;
+    box-shadow: 0 0 3px #00E5FF;
 }
 
 .skill-item:hover{
@@ -573,15 +577,18 @@ h1{
 }
 
 .skill-item img{
-    width:28px;
+    width:50%;
     height:28px;
     object-fit:contain;
+    border-radius: 20px;
 }
 
 .skill-item span{
+    width: 50%;
     color:#fff;
     font-size:18px;
     font-weight:500;
+    margin: 0 4px;
 }
 
 
@@ -710,14 +717,6 @@ h1{
     display: none;
 }
 
-/* @keyframes gridMove{
-    from{
-        background-position: 0 0;
-    }
-    to{
-        background-position: 40px 40px;
-    }
-} */
 
 @media (max-width : 768px){
     .nav{
@@ -736,13 +735,34 @@ h1{
     .menu-icon{
         display: block;
     }
+    
+
     .nav{
-        display: none;
+        position: fixed;
+        top: 0;
+        right: -260px;
+        width: 250px;
+        height: 100vh;
+        background-color: rgb(23, 26, 52);
+        backdrop-filter: blur(10px);
+        display: flex;
         flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 90px;
+        transition: 0.4s;
+        z-index: 999;
     }
 
     .nav.active{
-        display: flex;
+        right: 0;
+    }
+
+    .nav a{
+        width: 100%;
+        padding: 18px 25px;
+        margin: 0;
+        font-size: 20px;
     }
 
     .main-content{
@@ -764,6 +784,9 @@ h1{
 
     .left-section p{
         font-size: 20px;
+    }
+    .left-section .resume{
+        margin: 8px auto;
     }
 
     .right-section img{
@@ -792,9 +815,13 @@ h1{
     .education-card,
     .education-card1,
     .education-card2{
-        max-width: 80%;
+        max-width: 85%;
         margin: 20px auto;
     }
+
+    /* .education .description{
+       text-align: justify;
+    } */
 
     .header-section,
     .header-section1,
@@ -802,6 +829,7 @@ h1{
         flex-direction: column;
         text-align: center;
     }
+
 
     .projects-content img{
         width: 100%;
@@ -815,22 +843,22 @@ h1{
         min-width: 100px;
         height: 150px;
     }
-    .platforms-content h1{
+    #platforms h1{
         text-align: center;
     }
 
     .skills img,
-    .skills-web img{
-        width: 120px;
-        min-width: 100px;
-        height: 100px;
+    .skill-item img{
+        width: 40%;
+        min-width: 70px;
+        height: 40px;
         margin: 0;
         padding: 0;
     }
 
     .contact-box{
-        width: 70%;
-        max-width: 400px;
+        width: 85%;
+        max-width: 500px;
         
     }
 
