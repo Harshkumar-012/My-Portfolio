@@ -125,6 +125,7 @@ html{
     justify-content: center;
     align-items: center;
     border-radius: 80px;
+    
 }
 
 
@@ -135,19 +136,19 @@ html{
     border: none;
     border-radius: 6px;
     background-color:#0F172A ;
-    color: #FAF8FC;
+    color: #00E5FF;
     text-decoration: none;
 }
 
 .button:hover{
     cursor: pointer;
     text-decoration: underline;
-    color: rgb(117, 18, 216);
+    color: rgb(9, 119, 246);
 }
 
 .main-section{
     min-height: 100vh;
-    margin: 0 20px;
+    margin: 20px 20px;
     padding-top: 90px;
 }
 
