@@ -1,10 +1,3 @@
-// const menuIcon = document.getElementById("menu-icon");
-// const nav = document.querySelector(".nav");
-
-// menuIcon.addEventListener("click", () => {
-//     nav.classList.toggle("active");
-// });
-
 const text = "HI, I AM HARSH KUMAR";
 const typingText = document.querySelector("#typing-text");
 
