@@ -997,56 +997,119 @@ h1{
     }
 
     .fourth-section{
-        margin: 20px;
+        margin: 20px 10px;
+        padding-bottom: 20px;
         border-radius: 30px;
     }
 
     .fourth-section h1{
-        font-size: 30px;
+        font-size: 28px;
+        margin: 15px 0;
+        text-align: center;
     }
 
     .projects-content{
-        flex-direction: column;
-        gap: 25px;
+        width: 100%;
         padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        box-sizing: border-box;
     }
 
     .project-card{
         width: 100%;
         max-width: 320px;
+        margin: 0 auto;
+        border-radius: 18px;
+        overflow: hidden;
+        box-sizing: border-box;
     }
 
-    .project-image {
+    .project-image{
         display: block;
         width: 100%;
-        max-width: 320px;
+        max-width: 100%;
         height: auto;
-        margin: 0 auto;
+        margin: 0;
+        padding: 0;
+        object-fit: cover;
+        border: none;
+        border-radius: 16px;
+        box-shadow: none;
     }
 
-    
-    .project-overlay img,
-    .github-btn img {
-        width: 20px ;
-        height: 20px ;
-        min-width: 20px ;
-        max-width: 20px ;
-        object-fit: contain;
-        margin: 0 ;
-        padding: 0 ;
-        border: none ;
-        box-shadow: none ;
+    .project-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 16px;
+        background: rgba(0, 0, 0, 0.70);
+        opacity: 0;
+        visibility: hidden;
+        transition:
+            opacity 0.3s ease,
+            visibility 0.3s ease;
+    }
+
+    .project-card:hover .project-overlay{
+        opacity: 1;
+        visibility: visible;
     }
 
     .project-btn{
         padding: 9px 12px;
         font-size: 13px;
+        gap: 6px;
+        border-radius: 25px;
+        white-space: nowrap;
     }
 
-    /* .github-btn img{
+    .project-overlay img{
+        width: 25px;
+        height: 25px;
+        min-width: 25px;
+        max-width: 25px;
+        object-fit: contain;
+        margin: 0;
+        padding: 0;
+        border: none;
+        border-radius: 50%;
+        box-shadow: none;
+    }
+
+    .github-btn img{
         width: 20px;
         height: 20px;
-    } */
+        min-width: 20px;
+        max-width: 20px;
+        object-fit: contain;
+        margin: 0;
+        padding: 0;
+    }
 
-    
+    .theory{
+        width: 100%;
+    }
+
+    .theory p{
+        font-size: 15px;
+        line-height: 23px;
+        margin: 10px 12px;
+        text-align: center;
+    }
+
 }
