@@ -338,6 +338,8 @@ html{
     line-height: 38px;
 }
 
+
+/* projects*/
 .fourth-section{
     min-height: 60vh;
     margin: 20px 20px;
@@ -488,6 +490,8 @@ html{
 .project-btn:hover{
     transform: scale(1.08);
 }
+
+
 
 /*Education*/
 
