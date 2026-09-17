@@ -16,13 +16,13 @@ function typeText(){
 typingText.textContent = "";
 typeText();
 
-const roles = [
-    "Frontend Web Developer",
-    "CSE Student",
-    "JavaScript Developer",
-    "DSA Learner",
-    "Problem Solver"
-];
+// const roles = [
+//     "Frontend Web Developer",
+//     "CSE Student",
+//     "JavaScript Developer",
+//     "DSA Learner",
+//     "Problem Solver"
+// ];
 
 const role = document.getElementById("role");
 
