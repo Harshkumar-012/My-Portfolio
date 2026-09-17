@@ -423,6 +423,7 @@ html{
     border-radius: 20px;
     opacity: 0;
     transition: opacity 0.3s ease;
+    display: none;
 }
 
 .project-overlay img {
