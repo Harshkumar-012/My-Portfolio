@@ -143,7 +143,7 @@ html{
 }
 
 /* Smooth underline */
-.button::after{
+/* .button::after{
     content: "";
     position: absolute;
     left: 50%;
@@ -154,7 +154,7 @@ html{
     border-radius: 10px;
     transform: translateX(-50%);
     transition: width 0.4s ease;
-}
+} */
 
 .button:hover{
     cursor: pointer;
@@ -291,7 +291,7 @@ html{
     transition: all 0.3s ease;
 }
 
-@keyframes float{
+/* @keyframes float{
     0%{
         transform: translateY(0px);
     }
@@ -301,14 +301,14 @@ html{
     100%{
         transform: translateY(0px);
     }
-}
+} */
 
-.right-section img:hover{
-    transform: scale(1.1);
+/* .right-section img:hover{
+    transform: scale(1.03);
     box-shadow: 0 0 20px #00E5FF,
                 0 0 30px #00E5FF,
                 0 0 50px #00E5FF;
-}
+} */
 
 .second-section,
 .third-section,
